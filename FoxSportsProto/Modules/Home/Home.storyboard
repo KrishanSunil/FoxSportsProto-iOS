@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="zpz-jR-Kfh">
+            <objects>
+                <viewController storyboardIdentifier="FPHomeVC" id="Qaq-SG-MQL" customClass="FPHomeVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BKR-uC-qcP"/>
+                        <viewControllerLayoutGuide type="bottom" id="BMt-VQ-VgF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EBo-Tg-jua">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xhK-Gy-6E0">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gm9-RD-ZIN">
+                                    <size key="itemSize" width="200" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FPMediaCell" id="ZYw-oh-AyK" customClass="FPMediaCell">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dMs-S5-o8a">
+                                                    <rect key="frame" x="50" y="18" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="hL8-Mh-mlm"/>
+                                                        <constraint firstAttribute="width" constant="100" id="uxT-bd-Jic"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mir-tt-4Vr">
+                                                    <rect key="frame" x="79" y="143" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="mir-tt-4Vr" firstAttribute="top" secondItem="dMs-S5-o8a" secondAttribute="bottom" constant="25" id="WCy-Ls-91c"/>
+                                            <constraint firstItem="dMs-S5-o8a" firstAttribute="top" secondItem="ZYw-oh-AyK" secondAttribute="topMargin" constant="10" id="Xg3-yw-FMW"/>
+                                            <constraint firstAttribute="centerX" secondItem="dMs-S5-o8a" secondAttribute="centerX" id="pfz-Jk-cac"/>
+                                            <constraint firstAttribute="centerX" secondItem="mir-tt-4Vr" secondAttribute="centerX" id="wNz-OR-pON"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="mir-tt-4Vr" id="liN-Ju-b6a"/>
+                                            <outlet property="thumbnailImageView" destination="dMs-S5-o8a" id="xLO-Nx-Cvh"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xhK-Gy-6E0" firstAttribute="top" secondItem="EBo-Tg-jua" secondAttribute="top" id="2mt-8b-jwd"/>
+                            <constraint firstAttribute="trailing" secondItem="xhK-Gy-6E0" secondAttribute="trailing" id="74h-NH-tfZ"/>
+                            <constraint firstItem="xhK-Gy-6E0" firstAttribute="leading" secondItem="EBo-Tg-jua" secondAttribute="leading" id="8Cf-eT-inb"/>
+                            <constraint firstItem="BMt-VQ-VgF" firstAttribute="top" secondItem="xhK-Gy-6E0" secondAttribute="bottom" id="dxM-Y7-vIw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="xhK-Gy-6E0" id="dEI-vJ-98P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T9d-bE-rPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401" y="630"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Event PopupVC-->
+        <scene sceneID="cMq-Wx-cnb">
+            <objects>
+                <viewController storyboardIdentifier="FPEventPopupVC" automaticallyAdjustsScrollViewInsets="NO" id="w7H-qP-amF" customClass="FPEventPopupVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ePu-IB-w7Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bck-Va-0ox"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SHz-CV-qhw">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.79999999999999982" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQx-VW-RcF" userLabel="View - Overlay">
+                                <rect key="frame" x="0.0" y="20" width="300" height="280"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0GM-65-Tyo">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FPEventTableViewCell" rowHeight="120" id="lyX-k2-bsG" customClass="FPEventTableViewCell">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lyX-k2-bsG" id="Kgh-Jr-ebR">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Al8-NQ-y4A">
+                                                    <rect key="frame" x="10" y="10" width="130" height="99"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="No0-k5-68o"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20'" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcb-G1-EG0">
+                                                    <rect key="frame" x="195" y="10" width="35" height="30"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Event description goes here" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sD-T3-I4e">
+                                                    <rect key="frame" x="150" y="45" width="140" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="6sD-T3-I4e" firstAttribute="leading" secondItem="Al8-NQ-y4A" secondAttribute="trailing" priority="999" constant="10" id="ERL-4Y-B6e"/>
+                                                <constraint firstItem="lcb-G1-EG0" firstAttribute="top" secondItem="Al8-NQ-y4A" secondAttribute="top" id="Z6v-lG-Yww"/>
+                                                <constraint firstItem="Al8-NQ-y4A" firstAttribute="top" secondItem="Kgh-Jr-ebR" secondAttribute="top" constant="10" id="jpn-Lw-QYq"/>
+                                                <constraint firstItem="Al8-NQ-y4A" firstAttribute="leading" secondItem="Kgh-Jr-ebR" secondAttribute="leading" constant="10" id="kJn-ia-cpE"/>
+                                                <constraint firstAttribute="trailing" secondItem="6sD-T3-I4e" secondAttribute="trailing" constant="10" id="lEk-2z-6AG"/>
+                                                <constraint firstItem="lcb-G1-EG0" firstAttribute="leading" secondItem="Al8-NQ-y4A" secondAttribute="trailing" constant="55" id="sci-9o-cyj"/>
+                                                <constraint firstItem="6sD-T3-I4e" firstAttribute="top" secondItem="lcb-G1-EG0" secondAttribute="bottom" constant="5" id="vJv-6e-rlg"/>
+                                                <constraint firstAttribute="bottom" secondItem="Al8-NQ-y4A" secondAttribute="bottom" constant="10" id="xod-BP-Di1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="eventDescriptionLabel" destination="6sD-T3-I4e" id="Uk7-Rl-ylU"/>
+                                            <outlet property="eventImageView" destination="Al8-NQ-y4A" id="hut-xj-v8e"/>
+                                            <outlet property="eventTimeLabel" destination="lcb-G1-EG0" id="fvs-Uy-jTr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rQx-VW-RcF" secondAttribute="trailing" id="0Hl-Za-osg"/>
+                            <constraint firstItem="rQx-VW-RcF" firstAttribute="leading" secondItem="SHz-CV-qhw" secondAttribute="leading" id="B41-gj-lpZ"/>
+                            <constraint firstItem="0GM-65-Tyo" firstAttribute="top" secondItem="SHz-CV-qhw" secondAttribute="top" id="Jes-pK-iZU"/>
+                            <constraint firstItem="rQx-VW-RcF" firstAttribute="top" secondItem="ePu-IB-w7Q" secondAttribute="bottom" id="LBn-7w-2Rj"/>
+                            <constraint firstAttribute="trailing" secondItem="0GM-65-Tyo" secondAttribute="trailing" id="Wku-9u-CMr"/>
+                            <constraint firstItem="Bck-Va-0ox" firstAttribute="top" secondItem="rQx-VW-RcF" secondAttribute="bottom" id="aRF-j4-re5"/>
+                            <constraint firstItem="Bck-Va-0ox" firstAttribute="top" secondItem="0GM-65-Tyo" secondAttribute="bottom" id="aau-BH-aas"/>
+                            <constraint firstItem="0GM-65-Tyo" firstAttribute="leading" secondItem="SHz-CV-qhw" secondAttribute="leading" id="f3h-qI-yzj"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="300"/>
+                    <connections>
+                        <outlet property="tableView" destination="0GM-65-Tyo" id="tUv-yw-u9j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nMT-qI-3Pt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701" y="602"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

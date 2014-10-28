@@ -1,0 +1,949 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71D84BD56EF6D869056109DC /* libPods-FoxSportsProto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BFB54BB4A80A902489034B /* libPods-FoxSportsProto.a */; };
+		D251C1A719FDEB4400DFADAE /* FPMovieStatsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D251C1A619FDEB4400DFADAE /* FPMovieStatsVC.m */; };
+		D251C1A919FDEB5000DFADAE /* MovieStats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D251C1A819FDEB5000DFADAE /* MovieStats.storyboard */; };
+		D251C1AC19FDEF3000DFADAE /* UIView+UpdateAutoLayoutConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = D251C1AB19FDEF3000DFADAE /* UIView+UpdateAutoLayoutConstraints.m */; };
+		D260F80E19F7677A00641C53 /* FPMatchNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D260F80D19F7677A00641C53 /* FPMatchNetworkClient.m */; };
+		D260F81F19F76F2A00641C53 /* FPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D260F81219F76F2A00641C53 /* FPEvent.m */; };
+		D260F82019F76F2A00641C53 /* FPGoalEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D260F81419F76F2A00641C53 /* FPGoalEvent.m */; };
+		D260F82119F76F2A00641C53 /* FPMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = D260F81619F76F2A00641C53 /* FPMatch.m */; };
+		D260F82219F76F2A00641C53 /* FPRedCardEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D260F81819F76F2A00641C53 /* FPRedCardEvent.m */; };
+		D260F82319F76F2A00641C53 /* FPSubstitutionEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D260F81A19F76F2A00641C53 /* FPSubstitutionEvent.m */; };
+		D260F82419F76F2A00641C53 /* FPTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = D260F81C19F76F2A00641C53 /* FPTeam.m */; };
+		D260F82519F76F2A00641C53 /* FPYellowCardEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D260F81E19F76F2A00641C53 /* FPYellowCardEvent.m */; };
+		D260F82819F76F3200641C53 /* FPMatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D260F82719F76F3200641C53 /* FPMatchManager.m */; };
+		D260F82C19F79D7900641C53 /* FPMovieControlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D260F82B19F79D7900641C53 /* FPMovieControlHandler.m */; };
+		D260F83019F7AFEB00641C53 /* FPTimelineView.m in Sources */ = {isa = PBXBuildFile; fileRef = D260F82F19F7AFEB00641C53 /* FPTimelineView.m */; };
+		D2B4802819F6440D004FE990 /* FPMovieLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B4802719F6440D004FE990 /* FPMovieLoadingVC.m */; };
+		D2B4802C19F649C3004FE990 /* FPTimeIntervalHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B4802B19F649C3004FE990 /* FPTimeIntervalHelper.m */; };
+		D2BF707E19F4AF3E0082AF05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF707D19F4AF3E0082AF05 /* main.m */; };
+		D2BF708119F4AF3E0082AF05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF708019F4AF3E0082AF05 /* AppDelegate.m */; };
+		D2BF708419F4AF3E0082AF05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF708319F4AF3E0082AF05 /* ViewController.m */; };
+		D2BF708719F4AF3E0082AF05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BF708519F4AF3E0082AF05 /* Main.storyboard */; };
+		D2BF708919F4AF3E0082AF05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2BF708819F4AF3E0082AF05 /* Images.xcassets */; };
+		D2BF709819F4AF3E0082AF05 /* FoxSportsProtoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF709719F4AF3E0082AF05 /* FoxSportsProtoTests.m */; };
+		D2BF70B919F4B7AC0082AF05 /* FPAFNetworkingService.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70B619F4B7AC0082AF05 /* FPAFNetworkingService.m */; };
+		D2BF70BA19F4B7AC0082AF05 /* FPInitRootControllerService.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70B819F4B7AC0082AF05 /* FPInitRootControllerService.m */; };
+		D2BF70BF19F4B9030082AF05 /* FPDeviceManagerService.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70BE19F4B9030082AF05 /* FPDeviceManagerService.m */; };
+		D2BF70C219F4B91D0082AF05 /* FPDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70C119F4B91D0082AF05 /* FPDeviceManager.m */; };
+		D2BF70C619F4C23B0082AF05 /* FPBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70C519F4C23B0082AF05 /* FPBaseVC.m */; };
+		D2BF70C919F4C2AE0082AF05 /* FPHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70C819F4C2AE0082AF05 /* FPHomeVC.m */; };
+		D2BF70CB19F4C2BA0082AF05 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BF70CA19F4C2BA0082AF05 /* Home.storyboard */; };
+		D2BF70DA19F4C2DE0082AF05 /* FPMoviePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70CE19F4C2DE0082AF05 /* FPMoviePlayer.m */; };
+		D2BF70DB19F4C2DE0082AF05 /* FPMoviePlayer+AVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70D019F4C2DE0082AF05 /* FPMoviePlayer+AVPlayer.m */; };
+		D2BF70DC19F4C2DE0082AF05 /* FPMoviePlayer+AVPlayerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70D219F4C2DE0082AF05 /* FPMoviePlayer+AVPlayerItem.m */; };
+		D2BF70DD19F4C2DE0082AF05 /* FPMoviePlayer+Control.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70D419F4C2DE0082AF05 /* FPMoviePlayer+Control.m */; };
+		D2BF70DE19F4C2DE0082AF05 /* FPMoviePlayer+Playback.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70D619F4C2DE0082AF05 /* FPMoviePlayer+Playback.m */; };
+		D2BF70DF19F4C2DE0082AF05 /* FPMoviePlayer+TimeObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70D819F4C2DE0082AF05 /* FPMoviePlayer+TimeObserver.m */; };
+		D2BF70E319F4C4ED0082AF05 /* FPBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70E219F4C4ED0082AF05 /* FPBaseModel.m */; };
+		D2BF70E619F4C5740082AF05 /* FPMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70E519F4C5740082AF05 /* FPMedia.m */; };
+		D2BF70E919F4C5AE0082AF05 /* FPBaseModel+FPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70E819F4C5AE0082AF05 /* FPBaseModel+FPAdditions.m */; };
+		D2BF70EF19F4CA140082AF05 /* FPNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70EE19F4CA140082AF05 /* FPNetworkClient.m */; };
+		D2BF70F219F4CA1E0082AF05 /* FPMediaNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70F119F4CA1E0082AF05 /* FPMediaNetworkClient.m */; };
+		D2BF70F619F4CAFC0082AF05 /* FPSimpleDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70F519F4CAFC0082AF05 /* FPSimpleDataSource.m */; };
+		D2BF70F919F4CBC00082AF05 /* UIView+FPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70F819F4CBC00082AF05 /* UIView+FPAdditions.m */; };
+		D2BF70FC19F4CBCD0082AF05 /* UIViewController+FPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70FB19F4CBCD0082AF05 /* UIViewController+FPAdditions.m */; };
+		D2BF70FF19F4CD010082AF05 /* NSObject+FPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF70FE19F4CD010082AF05 /* NSObject+FPAdditions.m */; };
+		D2BF711D19F4F9A50082AF05 /* FPMediaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF711C19F4F9A50082AF05 /* FPMediaCell.m */; };
+		D2BF712719F507CC0082AF05 /* FPMoviePlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF712619F507CC0082AF05 /* FPMoviePlayerVC.m */; };
+		D2BF712A19F507F50082AF05 /* FPMovieOnlyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF712919F507F50082AF05 /* FPMovieOnlyVC.m */; };
+		D2BF712D19F5080C0082AF05 /* FPMovieTopBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF712C19F5080C0082AF05 /* FPMovieTopBarVC.m */; };
+		D2BF713019F508400082AF05 /* FPMovieBottomBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF712F19F508400082AF05 /* FPMovieBottomBarVC.m */; };
+		D2BF713219F510A60082AF05 /* MoviePlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BF713119F510A60082AF05 /* MoviePlayer.storyboard */; };
+		D2BF713419F510AE0082AF05 /* MovieOnly.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BF713319F510AE0082AF05 /* MovieOnly.storyboard */; };
+		D2BF713619F510B50082AF05 /* MovieTopBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BF713519F510B50082AF05 /* MovieTopBar.storyboard */; };
+		D2BF713819F510BC0082AF05 /* MovieBottomBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BF713719F510BC0082AF05 /* MovieBottomBar.storyboard */; };
+		D2DF473919F8A34F00093350 /* FPMatch+FPScore.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DF473819F8A34F00093350 /* FPMatch+FPScore.m */; };
+		D2DF473D19F8E2E300093350 /* FPEventInViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DF473C19F8E2E300093350 /* FPEventInViewHelper.m */; };
+		D2DF474419F8EFE400093350 /* FPEventPopupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DF474319F8EFE400093350 /* FPEventPopupVC.m */; };
+		D2DF474619F8EFF500093350 /* EventPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2DF474519F8EFF500093350 /* EventPopup.storyboard */; };
+		D2DF474919F8F05A00093350 /* FPEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DF474819F8F05A00093350 /* FPEventTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2BF709219F4AF3E0082AF05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2BF707019F4AF3E0082AF05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2BF707719F4AF3E0082AF05;
+			remoteInfo = FoxSportsProto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25531A542A9510123EE71EC8 /* Pods-FoxSportsProto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoxSportsProto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoxSportsProto/Pods-FoxSportsProto.debug.xcconfig"; sourceTree = "<group>"; };
+		94BFB54BB4A80A902489034B /* libPods-FoxSportsProto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoxSportsProto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95D2E49D876B723C88F2D51D /* Pods-FoxSportsProto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoxSportsProto.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoxSportsProto/Pods-FoxSportsProto.release.xcconfig"; sourceTree = "<group>"; };
+		D251C1A519FDEB4400DFADAE /* FPMovieStatsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMovieStatsVC.h; sourceTree = "<group>"; };
+		D251C1A619FDEB4400DFADAE /* FPMovieStatsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMovieStatsVC.m; sourceTree = "<group>"; };
+		D251C1A819FDEB5000DFADAE /* MovieStats.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MovieStats.storyboard; sourceTree = "<group>"; };
+		D251C1AA19FDEF3000DFADAE /* UIView+UpdateAutoLayoutConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UpdateAutoLayoutConstraints.h"; sourceTree = "<group>"; };
+		D251C1AB19FDEF3000DFADAE /* UIView+UpdateAutoLayoutConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UpdateAutoLayoutConstraints.m"; sourceTree = "<group>"; };
+		D260F80C19F7677A00641C53 /* FPMatchNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMatchNetworkClient.h; sourceTree = "<group>"; };
+		D260F80D19F7677A00641C53 /* FPMatchNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMatchNetworkClient.m; sourceTree = "<group>"; };
+		D260F81119F76F2A00641C53 /* FPEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPEvent.h; sourceTree = "<group>"; };
+		D260F81219F76F2A00641C53 /* FPEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPEvent.m; sourceTree = "<group>"; };
+		D260F81319F76F2A00641C53 /* FPGoalEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPGoalEvent.h; sourceTree = "<group>"; };
+		D260F81419F76F2A00641C53 /* FPGoalEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPGoalEvent.m; sourceTree = "<group>"; };
+		D260F81519F76F2A00641C53 /* FPMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMatch.h; sourceTree = "<group>"; };
+		D260F81619F76F2A00641C53 /* FPMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMatch.m; sourceTree = "<group>"; };
+		D260F81719F76F2A00641C53 /* FPRedCardEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPRedCardEvent.h; sourceTree = "<group>"; };
+		D260F81819F76F2A00641C53 /* FPRedCardEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPRedCardEvent.m; sourceTree = "<group>"; };
+		D260F81919F76F2A00641C53 /* FPSubstitutionEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSubstitutionEvent.h; sourceTree = "<group>"; };
+		D260F81A19F76F2A00641C53 /* FPSubstitutionEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSubstitutionEvent.m; sourceTree = "<group>"; };
+		D260F81B19F76F2A00641C53 /* FPTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPTeam.h; sourceTree = "<group>"; };
+		D260F81C19F76F2A00641C53 /* FPTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPTeam.m; sourceTree = "<group>"; };
+		D260F81D19F76F2A00641C53 /* FPYellowCardEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPYellowCardEvent.h; sourceTree = "<group>"; };
+		D260F81E19F76F2A00641C53 /* FPYellowCardEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPYellowCardEvent.m; sourceTree = "<group>"; };
+		D260F82619F76F3200641C53 /* FPMatchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMatchManager.h; sourceTree = "<group>"; };
+		D260F82719F76F3200641C53 /* FPMatchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMatchManager.m; sourceTree = "<group>"; };
+		D260F82A19F79D7900641C53 /* FPMovieControlHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMovieControlHandler.h; sourceTree = "<group>"; };
+		D260F82B19F79D7900641C53 /* FPMovieControlHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMovieControlHandler.m; sourceTree = "<group>"; };
+		D260F82E19F7AFEB00641C53 /* FPTimelineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPTimelineView.h; sourceTree = "<group>"; };
+		D260F82F19F7AFEB00641C53 /* FPTimelineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPTimelineView.m; sourceTree = "<group>"; };
+		D2B4802619F6440D004FE990 /* FPMovieLoadingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMovieLoadingVC.h; sourceTree = "<group>"; };
+		D2B4802719F6440D004FE990 /* FPMovieLoadingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMovieLoadingVC.m; sourceTree = "<group>"; };
+		D2B4802A19F649C3004FE990 /* FPTimeIntervalHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPTimeIntervalHelper.h; sourceTree = "<group>"; };
+		D2B4802B19F649C3004FE990 /* FPTimeIntervalHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPTimeIntervalHelper.m; sourceTree = "<group>"; };
+		D2BF707819F4AF3E0082AF05 /* FoxSportsProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoxSportsProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2BF707C19F4AF3E0082AF05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2BF707D19F4AF3E0082AF05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2BF707F19F4AF3E0082AF05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D2BF708019F4AF3E0082AF05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D2BF708219F4AF3E0082AF05 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D2BF708319F4AF3E0082AF05 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D2BF708619F4AF3E0082AF05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2BF708819F4AF3E0082AF05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D2BF709119F4AF3E0082AF05 /* FoxSportsProtoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoxSportsProtoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2BF709619F4AF3E0082AF05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2BF709719F4AF3E0082AF05 /* FoxSportsProtoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoxSportsProtoTests.m; sourceTree = "<group>"; };
+		D2BF70B519F4B7AC0082AF05 /* FPAFNetworkingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPAFNetworkingService.h; sourceTree = "<group>"; };
+		D2BF70B619F4B7AC0082AF05 /* FPAFNetworkingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPAFNetworkingService.m; sourceTree = "<group>"; };
+		D2BF70B719F4B7AC0082AF05 /* FPInitRootControllerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPInitRootControllerService.h; sourceTree = "<group>"; };
+		D2BF70B819F4B7AC0082AF05 /* FPInitRootControllerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPInitRootControllerService.m; sourceTree = "<group>"; };
+		D2BF70BD19F4B9030082AF05 /* FPDeviceManagerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPDeviceManagerService.h; sourceTree = "<group>"; };
+		D2BF70BE19F4B9030082AF05 /* FPDeviceManagerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPDeviceManagerService.m; sourceTree = "<group>"; };
+		D2BF70C019F4B91D0082AF05 /* FPDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPDeviceManager.h; sourceTree = "<group>"; };
+		D2BF70C119F4B91D0082AF05 /* FPDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPDeviceManager.m; sourceTree = "<group>"; };
+		D2BF70C419F4C23B0082AF05 /* FPBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPBaseVC.h; sourceTree = "<group>"; };
+		D2BF70C519F4C23B0082AF05 /* FPBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPBaseVC.m; sourceTree = "<group>"; };
+		D2BF70C719F4C2AE0082AF05 /* FPHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPHomeVC.h; sourceTree = "<group>"; };
+		D2BF70C819F4C2AE0082AF05 /* FPHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPHomeVC.m; sourceTree = "<group>"; };
+		D2BF70CA19F4C2BA0082AF05 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		D2BF70CC19F4C2DE0082AF05 /* FPMoviePlayer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMoviePlayer_Private.h; sourceTree = "<group>"; };
+		D2BF70CD19F4C2DE0082AF05 /* FPMoviePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMoviePlayer.h; sourceTree = "<group>"; };
+		D2BF70CE19F4C2DE0082AF05 /* FPMoviePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMoviePlayer.m; sourceTree = "<group>"; };
+		D2BF70CF19F4C2DE0082AF05 /* FPMoviePlayer+AVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FPMoviePlayer+AVPlayer.h"; sourceTree = "<group>"; };
+		D2BF70D019F4C2DE0082AF05 /* FPMoviePlayer+AVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FPMoviePlayer+AVPlayer.m"; sourceTree = "<group>"; };
+		D2BF70D119F4C2DE0082AF05 /* FPMoviePlayer+AVPlayerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FPMoviePlayer+AVPlayerItem.h"; sourceTree = "<group>"; };
+		D2BF70D219F4C2DE0082AF05 /* FPMoviePlayer+AVPlayerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FPMoviePlayer+AVPlayerItem.m"; sourceTree = "<group>"; };
+		D2BF70D319F4C2DE0082AF05 /* FPMoviePlayer+Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FPMoviePlayer+Control.h"; sourceTree = "<group>"; };
+		D2BF70D419F4C2DE0082AF05 /* FPMoviePlayer+Control.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FPMoviePlayer+Control.m"; sourceTree = "<group>"; };
+		D2BF70D519F4C2DE0082AF05 /* FPMoviePlayer+Playback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FPMoviePlayer+Playback.h"; sourceTree = "<group>"; };
+		D2BF70D619F4C2DE0082AF05 /* FPMoviePlayer+Playback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FPMoviePlayer+Playback.m"; sourceTree = "<group>"; };
+		D2BF70D719F4C2DE0082AF05 /* FPMoviePlayer+TimeObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FPMoviePlayer+TimeObserver.h"; sourceTree = "<group>"; };
+		D2BF70D819F4C2DE0082AF05 /* FPMoviePlayer+TimeObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FPMoviePlayer+TimeObserver.m"; sourceTree = "<group>"; };
+		D2BF70D919F4C2DE0082AF05 /* FPMoviePlayerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMoviePlayerHeader.h; sourceTree = "<group>"; };
+		D2BF70E119F4C4ED0082AF05 /* FPBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPBaseModel.h; sourceTree = "<group>"; };
+		D2BF70E219F4C4ED0082AF05 /* FPBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPBaseModel.m; sourceTree = "<group>"; };
+		D2BF70E419F4C5740082AF05 /* FPMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMedia.h; sourceTree = "<group>"; };
+		D2BF70E519F4C5740082AF05 /* FPMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMedia.m; sourceTree = "<group>"; };
+		D2BF70E719F4C5AE0082AF05 /* FPBaseModel+FPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FPBaseModel+FPAdditions.h"; sourceTree = "<group>"; };
+		D2BF70E819F4C5AE0082AF05 /* FPBaseModel+FPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FPBaseModel+FPAdditions.m"; sourceTree = "<group>"; };
+		D2BF70ED19F4CA140082AF05 /* FPNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPNetworkClient.h; sourceTree = "<group>"; };
+		D2BF70EE19F4CA140082AF05 /* FPNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPNetworkClient.m; sourceTree = "<group>"; };
+		D2BF70F019F4CA1E0082AF05 /* FPMediaNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMediaNetworkClient.h; sourceTree = "<group>"; };
+		D2BF70F119F4CA1E0082AF05 /* FPMediaNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMediaNetworkClient.m; sourceTree = "<group>"; };
+		D2BF70F419F4CAFC0082AF05 /* FPSimpleDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSimpleDataSource.h; sourceTree = "<group>"; };
+		D2BF70F519F4CAFC0082AF05 /* FPSimpleDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSimpleDataSource.m; sourceTree = "<group>"; };
+		D2BF70F719F4CBC00082AF05 /* UIView+FPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FPAdditions.h"; sourceTree = "<group>"; };
+		D2BF70F819F4CBC00082AF05 /* UIView+FPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FPAdditions.m"; sourceTree = "<group>"; };
+		D2BF70FA19F4CBCD0082AF05 /* UIViewController+FPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FPAdditions.h"; sourceTree = "<group>"; };
+		D2BF70FB19F4CBCD0082AF05 /* UIViewController+FPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FPAdditions.m"; sourceTree = "<group>"; };
+		D2BF70FD19F4CD010082AF05 /* NSObject+FPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FPAdditions.h"; sourceTree = "<group>"; };
+		D2BF70FE19F4CD010082AF05 /* NSObject+FPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FPAdditions.m"; sourceTree = "<group>"; };
+		D2BF710019F4EABA0082AF05 /* FPBlockDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPBlockDef.h; sourceTree = "<group>"; };
+		D2BF711B19F4F9A50082AF05 /* FPMediaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMediaCell.h; sourceTree = "<group>"; };
+		D2BF711C19F4F9A50082AF05 /* FPMediaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMediaCell.m; sourceTree = "<group>"; };
+		D2BF712519F507CC0082AF05 /* FPMoviePlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMoviePlayerVC.h; sourceTree = "<group>"; };
+		D2BF712619F507CC0082AF05 /* FPMoviePlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMoviePlayerVC.m; sourceTree = "<group>"; };
+		D2BF712819F507F50082AF05 /* FPMovieOnlyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMovieOnlyVC.h; sourceTree = "<group>"; };
+		D2BF712919F507F50082AF05 /* FPMovieOnlyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMovieOnlyVC.m; sourceTree = "<group>"; };
+		D2BF712B19F5080C0082AF05 /* FPMovieTopBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMovieTopBarVC.h; sourceTree = "<group>"; };
+		D2BF712C19F5080C0082AF05 /* FPMovieTopBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMovieTopBarVC.m; sourceTree = "<group>"; };
+		D2BF712E19F508400082AF05 /* FPMovieBottomBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMovieBottomBarVC.h; sourceTree = "<group>"; };
+		D2BF712F19F508400082AF05 /* FPMovieBottomBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMovieBottomBarVC.m; sourceTree = "<group>"; };
+		D2BF713119F510A60082AF05 /* MoviePlayer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MoviePlayer.storyboard; sourceTree = "<group>"; };
+		D2BF713319F510AE0082AF05 /* MovieOnly.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MovieOnly.storyboard; sourceTree = "<group>"; };
+		D2BF713519F510B50082AF05 /* MovieTopBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MovieTopBar.storyboard; sourceTree = "<group>"; };
+		D2BF713719F510BC0082AF05 /* MovieBottomBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MovieBottomBar.storyboard; sourceTree = "<group>"; };
+		D2DF473719F8A34F00093350 /* FPMatch+FPScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FPMatch+FPScore.h"; sourceTree = "<group>"; };
+		D2DF473819F8A34F00093350 /* FPMatch+FPScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FPMatch+FPScore.m"; sourceTree = "<group>"; };
+		D2DF473B19F8E2E300093350 /* FPEventInViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPEventInViewHelper.h; sourceTree = "<group>"; };
+		D2DF473C19F8E2E300093350 /* FPEventInViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPEventInViewHelper.m; sourceTree = "<group>"; };
+		D2DF474219F8EFE400093350 /* FPEventPopupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPEventPopupVC.h; sourceTree = "<group>"; };
+		D2DF474319F8EFE400093350 /* FPEventPopupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPEventPopupVC.m; sourceTree = "<group>"; };
+		D2DF474519F8EFF500093350 /* EventPopup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EventPopup.storyboard; sourceTree = "<group>"; };
+		D2DF474719F8F05A00093350 /* FPEventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPEventTableViewCell.h; sourceTree = "<group>"; };
+		D2DF474819F8F05A00093350 /* FPEventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPEventTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2BF707519F4AF3E0082AF05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D84BD56EF6D869056109DC /* libPods-FoxSportsProto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2BF708E19F4AF3E0082AF05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		217C22852FB3326F15FE22A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94BFB54BB4A80A902489034B /* libPods-FoxSportsProto.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		729BA72CE93F890CB01A1851 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25531A542A9510123EE71EC8 /* Pods-FoxSportsProto.debug.xcconfig */,
+				95D2E49D876B723C88F2D51D /* Pods-FoxSportsProto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D260F80F19F76F2A00641C53 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D260F82619F76F3200641C53 /* FPMatchManager.h */,
+				D260F82719F76F3200641C53 /* FPMatchManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D260F81019F76F2A00641C53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D260F81119F76F2A00641C53 /* FPEvent.h */,
+				D260F81219F76F2A00641C53 /* FPEvent.m */,
+				D260F81319F76F2A00641C53 /* FPGoalEvent.h */,
+				D260F81419F76F2A00641C53 /* FPGoalEvent.m */,
+				D260F81519F76F2A00641C53 /* FPMatch.h */,
+				D260F81619F76F2A00641C53 /* FPMatch.m */,
+				D260F81719F76F2A00641C53 /* FPRedCardEvent.h */,
+				D260F81819F76F2A00641C53 /* FPRedCardEvent.m */,
+				D260F81919F76F2A00641C53 /* FPSubstitutionEvent.h */,
+				D260F81A19F76F2A00641C53 /* FPSubstitutionEvent.m */,
+				D260F81B19F76F2A00641C53 /* FPTeam.h */,
+				D260F81C19F76F2A00641C53 /* FPTeam.m */,
+				D260F81D19F76F2A00641C53 /* FPYellowCardEvent.h */,
+				D260F81E19F76F2A00641C53 /* FPYellowCardEvent.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D260F82919F79D6A00641C53 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				D260F82A19F79D7900641C53 /* FPMovieControlHandler.h */,
+				D260F82B19F79D7900641C53 /* FPMovieControlHandler.m */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		D260F82D19F7AFB300641C53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D260F82E19F7AFEB00641C53 /* FPTimelineView.h */,
+				D260F82F19F7AFEB00641C53 /* FPTimelineView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D2B4802919F64997004FE990 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D2B4802A19F649C3004FE990 /* FPTimeIntervalHelper.h */,
+				D2B4802B19F649C3004FE990 /* FPTimeIntervalHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D2BF706F19F4AF3E0082AF05 = {
+			isa = PBXGroup;
+			children = (
+				D2BF707A19F4AF3E0082AF05 /* FoxSportsProto */,
+				D2BF709419F4AF3E0082AF05 /* FoxSportsProtoTests */,
+				D2BF707919F4AF3E0082AF05 /* Products */,
+				729BA72CE93F890CB01A1851 /* Pods */,
+				217C22852FB3326F15FE22A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2BF707919F4AF3E0082AF05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF707819F4AF3E0082AF05 /* FoxSportsProto.app */,
+				D2BF709119F4AF3E0082AF05 /* FoxSportsProtoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2BF707A19F4AF3E0082AF05 /* FoxSportsProto */ = {
+			isa = PBXGroup;
+			children = (
+				D2B4802919F64997004FE990 /* Helpers */,
+				D2BF70F319F4CA700082AF05 /* DataSource */,
+				D2BF70E019F4C4D80082AF05 /* Models */,
+				D2BF70C319F4C1120082AF05 /* Base */,
+				D2BF70BB19F4B8D80082AF05 /* Device */,
+				D2BF70BC19F4B8D80082AF05 /* Network */,
+				D2BF70A519F4B5A90082AF05 /* Modules */,
+				D2BF70A119F4B5550082AF05 /* AppDelegateServices */,
+				D2BF70A219F4B5550082AF05 /* Categories */,
+				D2BF70A419F4B5550082AF05 /* MoviePlayer */,
+				D2BF707F19F4AF3E0082AF05 /* AppDelegate.h */,
+				D2BF708019F4AF3E0082AF05 /* AppDelegate.m */,
+				D2BF708219F4AF3E0082AF05 /* ViewController.h */,
+				D2BF708319F4AF3E0082AF05 /* ViewController.m */,
+				D2BF708519F4AF3E0082AF05 /* Main.storyboard */,
+				D2BF708819F4AF3E0082AF05 /* Images.xcassets */,
+				D2BF707B19F4AF3E0082AF05 /* Supporting Files */,
+			);
+			path = FoxSportsProto;
+			sourceTree = "<group>";
+		};
+		D2BF707B19F4AF3E0082AF05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF707C19F4AF3E0082AF05 /* Info.plist */,
+				D2BF707D19F4AF3E0082AF05 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2BF709419F4AF3E0082AF05 /* FoxSportsProtoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF709719F4AF3E0082AF05 /* FoxSportsProtoTests.m */,
+				D2BF709519F4AF3E0082AF05 /* Supporting Files */,
+			);
+			path = FoxSportsProtoTests;
+			sourceTree = "<group>";
+		};
+		D2BF709519F4AF3E0082AF05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF709619F4AF3E0082AF05 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2BF70A119F4B5550082AF05 /* AppDelegateServices */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF70B519F4B7AC0082AF05 /* FPAFNetworkingService.h */,
+				D2BF70B619F4B7AC0082AF05 /* FPAFNetworkingService.m */,
+				D2BF70B719F4B7AC0082AF05 /* FPInitRootControllerService.h */,
+				D2BF70B819F4B7AC0082AF05 /* FPInitRootControllerService.m */,
+			);
+			path = AppDelegateServices;
+			sourceTree = "<group>";
+		};
+		D2BF70A219F4B5550082AF05 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D251C1AA19FDEF3000DFADAE /* UIView+UpdateAutoLayoutConstraints.h */,
+				D251C1AB19FDEF3000DFADAE /* UIView+UpdateAutoLayoutConstraints.m */,
+				D2BF70E719F4C5AE0082AF05 /* FPBaseModel+FPAdditions.h */,
+				D2BF70E819F4C5AE0082AF05 /* FPBaseModel+FPAdditions.m */,
+				D2BF70F719F4CBC00082AF05 /* UIView+FPAdditions.h */,
+				D2BF70F819F4CBC00082AF05 /* UIView+FPAdditions.m */,
+				D2BF70FA19F4CBCD0082AF05 /* UIViewController+FPAdditions.h */,
+				D2BF70FB19F4CBCD0082AF05 /* UIViewController+FPAdditions.m */,
+				D2BF70FD19F4CD010082AF05 /* NSObject+FPAdditions.h */,
+				D2BF70FE19F4CD010082AF05 /* NSObject+FPAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		D2BF70A419F4B5550082AF05 /* MoviePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF70CC19F4C2DE0082AF05 /* FPMoviePlayer_Private.h */,
+				D2BF70CD19F4C2DE0082AF05 /* FPMoviePlayer.h */,
+				D2BF70CE19F4C2DE0082AF05 /* FPMoviePlayer.m */,
+				D2BF70CF19F4C2DE0082AF05 /* FPMoviePlayer+AVPlayer.h */,
+				D2BF70D019F4C2DE0082AF05 /* FPMoviePlayer+AVPlayer.m */,
+				D2BF70D119F4C2DE0082AF05 /* FPMoviePlayer+AVPlayerItem.h */,
+				D2BF70D219F4C2DE0082AF05 /* FPMoviePlayer+AVPlayerItem.m */,
+				D2BF70D319F4C2DE0082AF05 /* FPMoviePlayer+Control.h */,
+				D2BF70D419F4C2DE0082AF05 /* FPMoviePlayer+Control.m */,
+				D2BF70D519F4C2DE0082AF05 /* FPMoviePlayer+Playback.h */,
+				D2BF70D619F4C2DE0082AF05 /* FPMoviePlayer+Playback.m */,
+				D2BF70D719F4C2DE0082AF05 /* FPMoviePlayer+TimeObserver.h */,
+				D2BF70D819F4C2DE0082AF05 /* FPMoviePlayer+TimeObserver.m */,
+				D2BF70D919F4C2DE0082AF05 /* FPMoviePlayerHeader.h */,
+			);
+			path = MoviePlayer;
+			sourceTree = "<group>";
+		};
+		D2BF70A519F4B5A90082AF05 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF70A619F4B5A90082AF05 /* Home */,
+				D2BF70A719F4B5A90082AF05 /* Movie */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D2BF70A619F4B5A90082AF05 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF70C719F4C2AE0082AF05 /* FPHomeVC.h */,
+				D2BF70C819F4C2AE0082AF05 /* FPHomeVC.m */,
+				D2BF70CA19F4C2BA0082AF05 /* Home.storyboard */,
+				D2BF711B19F4F9A50082AF05 /* FPMediaCell.h */,
+				D2BF711C19F4F9A50082AF05 /* FPMediaCell.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D2BF70A719F4B5A90082AF05 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				D2DF474119F8EFE400093350 /* Popup */,
+				D2DF473A19F8E2D500093350 /* Helpers */,
+				D2DF473619F8A33F00093350 /* Categories */,
+				D260F82D19F7AFB300641C53 /* Views */,
+				D260F82919F79D6A00641C53 /* Handlers */,
+				D260F80F19F76F2A00641C53 /* Managers */,
+				D260F81019F76F2A00641C53 /* Models */,
+				D2BF712419F507AA0082AF05 /* Controllers */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		D2BF70BB19F4B8D80082AF05 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF70C019F4B91D0082AF05 /* FPDeviceManager.h */,
+				D2BF70C119F4B91D0082AF05 /* FPDeviceManager.m */,
+				D2BF70BD19F4B9030082AF05 /* FPDeviceManagerService.h */,
+				D2BF70BE19F4B9030082AF05 /* FPDeviceManagerService.m */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		D2BF70BC19F4B8D80082AF05 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF70ED19F4CA140082AF05 /* FPNetworkClient.h */,
+				D2BF70EE19F4CA140082AF05 /* FPNetworkClient.m */,
+				D2BF70F019F4CA1E0082AF05 /* FPMediaNetworkClient.h */,
+				D2BF70F119F4CA1E0082AF05 /* FPMediaNetworkClient.m */,
+				D2BF710019F4EABA0082AF05 /* FPBlockDef.h */,
+				D260F80C19F7677A00641C53 /* FPMatchNetworkClient.h */,
+				D260F80D19F7677A00641C53 /* FPMatchNetworkClient.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D2BF70C319F4C1120082AF05 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF70C419F4C23B0082AF05 /* FPBaseVC.h */,
+				D2BF70C519F4C23B0082AF05 /* FPBaseVC.m */,
+				D2BF70E119F4C4ED0082AF05 /* FPBaseModel.h */,
+				D2BF70E219F4C4ED0082AF05 /* FPBaseModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D2BF70E019F4C4D80082AF05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF70E419F4C5740082AF05 /* FPMedia.h */,
+				D2BF70E519F4C5740082AF05 /* FPMedia.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2BF70F319F4CA700082AF05 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF70F419F4CAFC0082AF05 /* FPSimpleDataSource.h */,
+				D2BF70F519F4CAFC0082AF05 /* FPSimpleDataSource.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		D2BF712419F507AA0082AF05 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF712519F507CC0082AF05 /* FPMoviePlayerVC.h */,
+				D2BF712619F507CC0082AF05 /* FPMoviePlayerVC.m */,
+				D2BF713119F510A60082AF05 /* MoviePlayer.storyboard */,
+				D2BF712819F507F50082AF05 /* FPMovieOnlyVC.h */,
+				D2BF712919F507F50082AF05 /* FPMovieOnlyVC.m */,
+				D2BF713319F510AE0082AF05 /* MovieOnly.storyboard */,
+				D2BF712B19F5080C0082AF05 /* FPMovieTopBarVC.h */,
+				D2BF712C19F5080C0082AF05 /* FPMovieTopBarVC.m */,
+				D2BF713519F510B50082AF05 /* MovieTopBar.storyboard */,
+				D2BF712E19F508400082AF05 /* FPMovieBottomBarVC.h */,
+				D2BF712F19F508400082AF05 /* FPMovieBottomBarVC.m */,
+				D2BF713719F510BC0082AF05 /* MovieBottomBar.storyboard */,
+				D2B4802619F6440D004FE990 /* FPMovieLoadingVC.h */,
+				D2B4802719F6440D004FE990 /* FPMovieLoadingVC.m */,
+				D251C1A519FDEB4400DFADAE /* FPMovieStatsVC.h */,
+				D251C1A619FDEB4400DFADAE /* FPMovieStatsVC.m */,
+				D251C1A819FDEB5000DFADAE /* MovieStats.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D2DF473619F8A33F00093350 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D2DF473719F8A34F00093350 /* FPMatch+FPScore.h */,
+				D2DF473819F8A34F00093350 /* FPMatch+FPScore.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		D2DF473A19F8E2D500093350 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D2DF473B19F8E2E300093350 /* FPEventInViewHelper.h */,
+				D2DF473C19F8E2E300093350 /* FPEventInViewHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D2DF474119F8EFE400093350 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				D2DF474219F8EFE400093350 /* FPEventPopupVC.h */,
+				D2DF474319F8EFE400093350 /* FPEventPopupVC.m */,
+				D2DF474519F8EFF500093350 /* EventPopup.storyboard */,
+				D2DF474719F8F05A00093350 /* FPEventTableViewCell.h */,
+				D2DF474819F8F05A00093350 /* FPEventTableViewCell.m */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2BF707719F4AF3E0082AF05 /* FoxSportsProto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2BF709B19F4AF3E0082AF05 /* Build configuration list for PBXNativeTarget "FoxSportsProto" */;
+			buildPhases = (
+				6AF0E189BDFD66712147195C /* Check Pods Manifest.lock */,
+				D2BF707419F4AF3E0082AF05 /* Sources */,
+				D2BF707519F4AF3E0082AF05 /* Frameworks */,
+				D2BF707619F4AF3E0082AF05 /* Resources */,
+				91FA492BC45EB5B916D99EFE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoxSportsProto;
+			productName = FoxSportsProto;
+			productReference = D2BF707819F4AF3E0082AF05 /* FoxSportsProto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2BF709019F4AF3E0082AF05 /* FoxSportsProtoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2BF709E19F4AF3E0082AF05 /* Build configuration list for PBXNativeTarget "FoxSportsProtoTests" */;
+			buildPhases = (
+				D2BF708D19F4AF3E0082AF05 /* Sources */,
+				D2BF708E19F4AF3E0082AF05 /* Frameworks */,
+				D2BF708F19F4AF3E0082AF05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2BF709319F4AF3E0082AF05 /* PBXTargetDependency */,
+			);
+			name = FoxSportsProtoTests;
+			productName = FoxSportsProtoTests;
+			productReference = D2BF709119F4AF3E0082AF05 /* FoxSportsProtoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2BF707019F4AF3E0082AF05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FP;
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = 2359Media;
+				TargetAttributes = {
+					D2BF707719F4AF3E0082AF05 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					D2BF709019F4AF3E0082AF05 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = D2BF707719F4AF3E0082AF05;
+					};
+				};
+			};
+			buildConfigurationList = D2BF707319F4AF3E0082AF05 /* Build configuration list for PBXProject "FoxSportsProto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2BF706F19F4AF3E0082AF05;
+			productRefGroup = D2BF707919F4AF3E0082AF05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2BF707719F4AF3E0082AF05 /* FoxSportsProto */,
+				D2BF709019F4AF3E0082AF05 /* FoxSportsProtoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2BF707619F4AF3E0082AF05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BF70CB19F4C2BA0082AF05 /* Home.storyboard in Resources */,
+				D251C1A919FDEB5000DFADAE /* MovieStats.storyboard in Resources */,
+				D2BF713419F510AE0082AF05 /* MovieOnly.storyboard in Resources */,
+				D2DF474619F8EFF500093350 /* EventPopup.storyboard in Resources */,
+				D2BF713819F510BC0082AF05 /* MovieBottomBar.storyboard in Resources */,
+				D2BF708719F4AF3E0082AF05 /* Main.storyboard in Resources */,
+				D2BF713619F510B50082AF05 /* MovieTopBar.storyboard in Resources */,
+				D2BF713219F510A60082AF05 /* MoviePlayer.storyboard in Resources */,
+				D2BF708919F4AF3E0082AF05 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2BF708F19F4AF3E0082AF05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AF0E189BDFD66712147195C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91FA492BC45EB5B916D99EFE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoxSportsProto/Pods-FoxSportsProto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2BF707419F4AF3E0082AF05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BF70E919F4C5AE0082AF05 /* FPBaseModel+FPAdditions.m in Sources */,
+				D2B4802C19F649C3004FE990 /* FPTimeIntervalHelper.m in Sources */,
+				D2BF70E619F4C5740082AF05 /* FPMedia.m in Sources */,
+				D260F82019F76F2A00641C53 /* FPGoalEvent.m in Sources */,
+				D2BF70DC19F4C2DE0082AF05 /* FPMoviePlayer+AVPlayerItem.m in Sources */,
+				D2DF473919F8A34F00093350 /* FPMatch+FPScore.m in Sources */,
+				D2BF70B919F4B7AC0082AF05 /* FPAFNetworkingService.m in Sources */,
+				D251C1A719FDEB4400DFADAE /* FPMovieStatsVC.m in Sources */,
+				D260F82319F76F2A00641C53 /* FPSubstitutionEvent.m in Sources */,
+				D2BF70F619F4CAFC0082AF05 /* FPSimpleDataSource.m in Sources */,
+				D2BF70C219F4B91D0082AF05 /* FPDeviceManager.m in Sources */,
+				D260F82219F76F2A00641C53 /* FPRedCardEvent.m in Sources */,
+				D2BF70FC19F4CBCD0082AF05 /* UIViewController+FPAdditions.m in Sources */,
+				D2BF712D19F5080C0082AF05 /* FPMovieTopBarVC.m in Sources */,
+				D2BF712A19F507F50082AF05 /* FPMovieOnlyVC.m in Sources */,
+				D2DF474919F8F05A00093350 /* FPEventTableViewCell.m in Sources */,
+				D2BF70C919F4C2AE0082AF05 /* FPHomeVC.m in Sources */,
+				D260F82119F76F2A00641C53 /* FPMatch.m in Sources */,
+				D260F81F19F76F2A00641C53 /* FPEvent.m in Sources */,
+				D260F82519F76F2A00641C53 /* FPYellowCardEvent.m in Sources */,
+				D260F83019F7AFEB00641C53 /* FPTimelineView.m in Sources */,
+				D251C1AC19FDEF3000DFADAE /* UIView+UpdateAutoLayoutConstraints.m in Sources */,
+				D2B4802819F6440D004FE990 /* FPMovieLoadingVC.m in Sources */,
+				D260F82C19F79D7900641C53 /* FPMovieControlHandler.m in Sources */,
+				D260F80E19F7677A00641C53 /* FPMatchNetworkClient.m in Sources */,
+				D2BF70DB19F4C2DE0082AF05 /* FPMoviePlayer+AVPlayer.m in Sources */,
+				D2BF70BF19F4B9030082AF05 /* FPDeviceManagerService.m in Sources */,
+				D260F82419F76F2A00641C53 /* FPTeam.m in Sources */,
+				D2BF712719F507CC0082AF05 /* FPMoviePlayerVC.m in Sources */,
+				D2BF70DE19F4C2DE0082AF05 /* FPMoviePlayer+Playback.m in Sources */,
+				D2BF70DF19F4C2DE0082AF05 /* FPMoviePlayer+TimeObserver.m in Sources */,
+				D260F82819F76F3200641C53 /* FPMatchManager.m in Sources */,
+				D2BF70DD19F4C2DE0082AF05 /* FPMoviePlayer+Control.m in Sources */,
+				D2DF474419F8EFE400093350 /* FPEventPopupVC.m in Sources */,
+				D2BF713019F508400082AF05 /* FPMovieBottomBarVC.m in Sources */,
+				D2BF711D19F4F9A50082AF05 /* FPMediaCell.m in Sources */,
+				D2BF70BA19F4B7AC0082AF05 /* FPInitRootControllerService.m in Sources */,
+				D2BF70F219F4CA1E0082AF05 /* FPMediaNetworkClient.m in Sources */,
+				D2DF473D19F8E2E300093350 /* FPEventInViewHelper.m in Sources */,
+				D2BF70E319F4C4ED0082AF05 /* FPBaseModel.m in Sources */,
+				D2BF708419F4AF3E0082AF05 /* ViewController.m in Sources */,
+				D2BF70EF19F4CA140082AF05 /* FPNetworkClient.m in Sources */,
+				D2BF708119F4AF3E0082AF05 /* AppDelegate.m in Sources */,
+				D2BF70FF19F4CD010082AF05 /* NSObject+FPAdditions.m in Sources */,
+				D2BF707E19F4AF3E0082AF05 /* main.m in Sources */,
+				D2BF70C619F4C23B0082AF05 /* FPBaseVC.m in Sources */,
+				D2BF70DA19F4C2DE0082AF05 /* FPMoviePlayer.m in Sources */,
+				D2BF70F919F4CBC00082AF05 /* UIView+FPAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2BF708D19F4AF3E0082AF05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BF709819F4AF3E0082AF05 /* FoxSportsProtoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2BF709319F4AF3E0082AF05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2BF707719F4AF3E0082AF05 /* FoxSportsProto */;
+			targetProxy = D2BF709219F4AF3E0082AF05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2BF708519F4AF3E0082AF05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2BF708619F4AF3E0082AF05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2BF709919F4AF3E0082AF05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D2BF709A19F4AF3E0082AF05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2BF709C19F4AF3E0082AF05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25531A542A9510123EE71EC8 /* Pods-FoxSportsProto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FoxSportsProto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		D2BF709D19F4AF3E0082AF05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D2E49D876B723C88F2D51D /* Pods-FoxSportsProto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FoxSportsProto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		D2BF709F19F4AF3E0082AF05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FoxSportsProtoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoxSportsProto.app/FoxSportsProto";
+			};
+			name = Debug;
+		};
+		D2BF70A019F4AF3E0082AF05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FoxSportsProtoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoxSportsProto.app/FoxSportsProto";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2BF707319F4AF3E0082AF05 /* Build configuration list for PBXProject "FoxSportsProto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2BF709919F4AF3E0082AF05 /* Debug */,
+				D2BF709A19F4AF3E0082AF05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2BF709B19F4AF3E0082AF05 /* Build configuration list for PBXNativeTarget "FoxSportsProto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2BF709C19F4AF3E0082AF05 /* Debug */,
+				D2BF709D19F4AF3E0082AF05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2BF709E19F4AF3E0082AF05 /* Build configuration list for PBXNativeTarget "FoxSportsProtoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2BF709F19F4AF3E0082AF05 /* Debug */,
+				D2BF70A019F4AF3E0082AF05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2BF707019F4AF3E0082AF05 /* Project object */;
+}

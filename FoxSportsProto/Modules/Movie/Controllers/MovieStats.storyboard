@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Movie StatsVC-->
+        <scene sceneID="3vR-TW-5DB">
+            <objects>
+                <viewController storyboardIdentifier="FPMovieStatsVC" id="guQ-Hb-aSd" customClass="FPMovieStatsVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F1K-b2-z2B"/>
+                        <viewControllerLayoutGuide type="bottom" id="CRV-z3-DWi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DbD-kq-BTB">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUh-wE-Xfc">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="DS6-aW-b4f">
+                                <rect key="frame" x="366" y="494" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GUh-wE-Xfc" secondAttribute="trailing" id="5wp-gm-bej"/>
+                            <constraint firstAttribute="bottom" secondItem="GUh-wE-Xfc" secondAttribute="bottom" id="9oC-Fz-yEf"/>
+                            <constraint firstItem="GUh-wE-Xfc" firstAttribute="leading" secondItem="DbD-kq-BTB" secondAttribute="leading" id="ART-6V-8ud"/>
+                            <constraint firstAttribute="centerY" secondItem="DS6-aW-b4f" secondAttribute="centerY" id="OS8-lm-Try"/>
+                            <constraint firstItem="GUh-wE-Xfc" firstAttribute="top" secondItem="DbD-kq-BTB" secondAttribute="top" id="eKR-Dc-s2Z"/>
+                            <constraint firstAttribute="centerX" secondItem="DS6-aW-b4f" secondAttribute="centerX" id="v8Q-xT-wU6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="DS6-aW-b4f" id="HWf-bN-bC8"/>
+                        <outlet property="webView" destination="GUh-wE-Xfc" id="CCp-Qr-8ao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uhz-1q-3Hv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="381.44" y="529.06666666666672"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
